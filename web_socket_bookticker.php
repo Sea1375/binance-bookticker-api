@@ -20,6 +20,7 @@ $api = new Binance\API("PSxGmJaZYnZabIx1c66peOV2vucR6jLuOQVIpoV1jMjPU0yGLMRey2V0
 // Ticker Updates via WebSocket
 $api->bookTicker(function($api, $ticker) {
   // print_r($ticker);
+  global $s3;
   $keyname = "ticker";
 
   try {
