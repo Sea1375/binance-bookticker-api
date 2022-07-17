@@ -9,7 +9,8 @@ use Aws\S3\Exception\S3Exception;
 $bucket = "order-ticket-api";
                         
 $s3 = new S3Client([
-    "region"  => "ap-northeast-1"
+    "region"  => "ap-northeast-1",
+    "version" => "2006-03-01"
 ]);
 
 // @see home_directory_config.php
