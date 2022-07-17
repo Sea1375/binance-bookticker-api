@@ -28,7 +28,7 @@ $api->bookTicker(function($api, $ticker) {
     $result = $s3->putObject([
         "Bucket" => $bucket,
         "Key"    => $keyname,
-        "Body"   => $ticker,
+        "Body"   => "Hello world",
         "ACL"    => "public-read"
     ]);
 
