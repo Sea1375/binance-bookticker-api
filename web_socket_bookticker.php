@@ -38,7 +38,7 @@ $api->bookTicker(function($api, $ticker) {
     // Print the URL to the object.
     // echo $result['ObjectURL'] . PHP_EOL;
     echo implode("|", $ticker);
-    echo "-----------------------------------------------------------------------------------------------------";
+    echo "\n";
   } catch (S3Exception $e) {
       echo $e->getMessage() . PHP_EOL;
   }
