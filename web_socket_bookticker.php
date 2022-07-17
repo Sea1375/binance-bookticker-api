@@ -7,10 +7,14 @@ use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 
 $bucket = "order-ticket-api";
+$access_key_id = 'AKIAUFRQLGMBDGCKOXM2';
+$secret_key = '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';
                         
 $s3 = new S3Client([
-    "region"  => "ap-northeast-1",
-    "version" => "2006-03-01"
+  "accessKeyId" => $access_key_id,
+  "secretAccessKey" => $secret_key,
+  "region"  => "ap-northeast-1",
+  "version" => "2006-03-01"
 ]);
 
 // @see home_directory_config.php
