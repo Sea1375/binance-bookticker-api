@@ -2,5 +2,4 @@
 
     $IAM_KEY = 'AKIAUFRQLGMBDGCKOXM2y';
     $IAM_SECRET = 'OMghlTsBYlUNT/NWxe2cP5CpEGKUdz3L7wxG9n0x';
-
 ?>
